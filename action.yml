@@ -1,0 +1,9 @@
+---
+name: action-pdk-validate
+description: Runs `pdk validate` on your puppet module code
+branding:
+  icon: check-square
+  color: orange
+runs:
+  using: docker
+  image: Dockerfile
