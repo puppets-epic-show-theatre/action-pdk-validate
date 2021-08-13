@@ -8,6 +8,9 @@ inputs:
   pe-version:
     description: A string indicating the PE version to validate against, such as "2017.3.5" or "2018.1".
     required: false
+  pdk-image:
+    description: A string indicating the docker image to build from, such as "puppet/pdk:latest" or "puppet/pdk:nightly".
+    required: false
 branding:
   icon: check-square
   color: orange
@@ -17,3 +20,4 @@ runs:
   env:
     PUPPET_VERSION: ${{ inputs.puppet-version }}
     PE_VERSION: ${{ inputs.pe-version }}
+    PDKIMAGE: ${{ inputs.pdk-image }}
