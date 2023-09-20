@@ -10,4 +10,4 @@ else
   additional_opts=""
 fi
 
-pdk validate --format=text $additional_opts
+pdk update && pdk validate --format=text $additional_opts
